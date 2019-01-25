@@ -12,7 +12,12 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   library = load_library(file_path)
-  library["get_emoticon"][emoticon]
+  answer = library["get_emoticon"][emoticon]
+  if answer
+    answer
+  else
+    puts "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
