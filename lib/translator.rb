@@ -8,6 +8,8 @@ def load_library(file_path)
     get_meaning[emoticon[1]] = emotion
     get_emoticon[emoticon[0]] = emoticon[1]
   end
+  get_meaning
+  get_emoticon
 end
 
 def get_japanese_emoticon
